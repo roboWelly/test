@@ -2,17 +2,14 @@
 
 git init
 
-echo "Enter project name: "
+echo "Enter project name: \c"
 read projName
 
-git add .
 git pull "https://github.com/roboWelly/$projName"
+git add .
 
 git remote rm origin
 git remote add origin "https://github.com/roboWelly/$projName"
 
-echo "Enter commit number: "
-read commitNum
-
-git commit -m "Commit $commitNum"
+git commit
 git push origin master
