@@ -11,5 +11,5 @@ git add .
 git remote rm origin
 git remote add origin "https://github.com/roboWelly/$projName"
 
-git commit -m "Commit..."
+git commit
 git push origin master
