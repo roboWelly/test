@@ -1,0 +1,9 @@
+#!/bin/bash
+
+git init
+
+echo "Enter project name: \c"
+read projName
+
+git add .
+git pull "https://github.com/roboWelly/$projName"
